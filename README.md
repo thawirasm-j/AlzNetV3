@@ -26,7 +26,7 @@ The `model_architecture/model.py` file defines the CNN architecture used in this
 ## Citation
 
 * If you use the original data, please refer to [https://doi.org/10.3390/data8060095](https://doi.org/10.3390/data8060095)
-* If you use these preprocessed data or models in your research, please cite the original manuscript: [Insert my manuscript citation here]
+* If you use our preprocessed data or models in your research, please cite the manuscript: [Insert my manuscript citation here]
 
 ## Contact
 
