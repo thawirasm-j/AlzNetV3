@@ -70,3 +70,16 @@ class AlzNetV3(nn.Module):
         x = self.cnn_relu_stack(x)
         x = self.global_pooling(x)
         return x
+
+# Training parameters 
+parameters = {
+    "max_epochs": 1000,
+    "batch_size": 64,
+    "learning_rate": 1e-4,
+    "doEarlyStopping": True,
+    "patience": 30,
+    "loss_fn": nn.CrossEntropyLoss(),
+}
+
+# List of outlier subject IDs
+outlier = ['02', '06', '25', '31', '50', '53', '69', '80', '86']
