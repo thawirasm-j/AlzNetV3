@@ -7,12 +7,11 @@ This repository contains the data and model information necessary to reproduce t
 * **`connectivity_maps/`:** This directory contains the instance-wise connectivity maps used in the study, both with and without outlier rejection.  The files are organized by subject and condition (A, C, F).
 * **`model_architecture`:** This directory contains the PyTorch definition of the convolutional neural network (CNN) architecture used for dementia subtype classification.  The file `model.py` defines the model structure.
 * **`model_checkpoints/`:** This directory contains the state dictionary of the best-performing CNN models for each classification task (multiclass, pairwise). The files are named according to the task they were trained for.
-* **`README.md`:** This file (the one you are currently reading).
 
 ## Data Description
 
 The `connectivity_maps/` directory contains the pre-processed connectivity matrices for each subject and condition. There are two types of data: `full/` with all data included and `rejected/` with outlier rejected. These matrices were derived from resting-state EEG recordings in the matrix format as demonstrated in the main manuscript.  The files are in .mat format.  The naming convention is as follows: 
-[condition][subject_id]_I20_[instance_id]
+[condition][subject_id]\_I20\_[instance_id]
 
 Where:
 
